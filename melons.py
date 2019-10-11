@@ -61,6 +61,6 @@ class GovernmentMelonOrder (AbstractMelonOrder):
     def __init__(self, species, qty):
         super().__init__(species, qty, "government", 0)
 
-    def mark_inspection()
-
-
+    def mark_inspection(self, passed):
+        self.passed_inspection = passed
+        print(self.passed_inspection)
